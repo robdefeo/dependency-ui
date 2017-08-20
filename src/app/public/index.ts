@@ -1,1 +1,0 @@
-export { PublicIndexComponent } from './index.component';
