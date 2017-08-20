@@ -2,17 +2,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core'
 
 // Public
-import { PublicIndexComponent } from './public/root'  
+import { PublicIndexComponent, RegisterComponent } from './public/root'  
+
 
 // Secure
 
 const appRoutes: Routes = [
     // public
     { path: '', component: PublicIndexComponent },
-
+    { path: 'register', component: RegisterComponent },
     // TODO: add public login
-
-    // TODO: add public register
 
     // secure 
 
