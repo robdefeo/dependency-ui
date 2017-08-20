@@ -1,9 +1,14 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core'
 
+// Public
+import { PublicIndexComponent } from './public/index'  
+
+// Secure
+
 const appRoutes: Routes = [
     // public
-    // TODO: add public index
+    { path: '', component: PublicIndexComponent },
 
     // TODO: add public login
 
@@ -12,8 +17,7 @@ const appRoutes: Routes = [
     // secure 
 
     // TODO: add secure page, e.g. view repositories
-    { },
-
+    
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ]
