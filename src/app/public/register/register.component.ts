@@ -12,9 +12,11 @@ export class RegisterComponent {
     constructor(private angularFireAuth: AngularFireAuth) {}
 
     registerWithGitHub() {
-        console.log("clicked");
+        const provider = new auth.GithubAuthProvider();
+        provider.addScope('repo');
+
         this.angularFireAuth.auth
-            .signInWithRedirect(new auth.GithubAuthProvider())
-            .then(res => console.log());
+            .signInWithRedirect(provider)
+            .then(res => console.log(res));
     }
 }
