@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core'
 
 // Public
-import { PublicIndexComponent } from './public/index'  
+import { PublicIndexComponent } from './public/root'  
 
 // Secure
 
